@@ -1,0 +1,22 @@
+﻿<Window x:Class="KinectStream.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:KinectStream"
+        mc:Ignorable="d"
+        Title="Kinect Stream" Height="720" Width="1080">
+    <Grid>
+        <Image Name="camera" />
+        <Canvas Name="canvas"/>
+        <Grid Style="{StaticResource GridButtonStyle}">
+            <StackPanel Style="{StaticResource StackPanelButtonStyle}">
+                <Button Content="Color" Click="Color_Click" Style="{StaticResource ButtonStyle}"/>
+                <Button Content="Depth" Click="Depth_Click" Style="{StaticResource ButtonStyle}"/>
+                <Button Content="Infrared" Click="Infrared_Click" Style="{StaticResource ButtonStyle}"/>
+                <Button Content="Body" Click="Body_Click" Style="{StaticResource ButtonStyle}"/>
+            </StackPanel>
+        </Grid>
+        <Label Content="Label" HorizontalAlignment="Center" Margin="376,10,382.2,0" VerticalAlignment="Top" Height="36" Width="37"/>
+    </Grid>
+</Window>
